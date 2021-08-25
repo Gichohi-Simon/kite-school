@@ -1,18 +1,28 @@
-import {makeStyles,createStyles} from '@material-ui/styles'
+import {Theme} from '@material-ui/core'
+import {makeStyles,createStyles} from '@material-ui/core/styles'
 
-export default makeStyles((theme) => createStyles({
+export default makeStyles((theme:Theme) => createStyles({
     main:{
         display:'flex',
     },
-    logo:{
-        
-    },
-    navLinks:{
-    //    display:'flex',
-    //    justifyContent:'center', 
+    color:{
+        width:'597px',
+        height:'500px',
+        backgroundColor:'#ddf8f6',
+        marginLeft:'40px'
     },
     linkItems:{
-        display:'flex',
-        justifyContent:'center'
+        display:'flex'
+    },
+    links:{
+       listStyle:'none',
+       paddingLeft:'20px',
+       fontSize:'32px',
+       fontWeight:'bold',
+       textTransform:'uppercase'
+    },
+    linkText:{
+       textDecoration:'none',
+       color:'black'
     }
 }))

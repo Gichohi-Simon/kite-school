@@ -37,7 +37,7 @@ export default function DrawerComponent() {
                     </ListItem>
                     <ListItem divider button>
                         <ListItemText>
-                            Contacts
+                            Contacts D
                         </ListItemText>
                     </ListItem>
                 </List>
