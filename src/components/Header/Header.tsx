@@ -16,7 +16,7 @@ export default function Header() {
 
     return (
         <div className={classes.main}>
-            <AppBar>
+            <AppBar className={classes.appBar}>
                 <Toolbar>
                     <Typography>
                         Logo

@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import { Drawer, List, ListItem} from '@material-ui/core'
+import { Drawer, IconButton, List, ListItem} from '@material-ui/core'
 import { ListItemText } from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu';
 
+import useStyles from './style'
 export default function DrawerComponent() {
 
     const [openDrawer, setOpenDrawer] = useState(true)
-
+    const classes = useStyles()
     return (
         <div>
             <Drawer
                 //changes positioning of drawer
-                anchor="right"
+                anchor="left"
                 //closes the drawer when we click anywhere
                 onClose={() => setOpenDrawer(false)}
                 open={openDrawer}
@@ -40,6 +42,9 @@ export default function DrawerComponent() {
                     </ListItem>
                 </List>
             </Drawer>
+            <IconButton className={classes.menuIconContainer} onClick={() => setOpenDrawer(!openDrawer)}>
+               <MenuIcon /> 
+            </IconButton>
         </div>
     )
 }
