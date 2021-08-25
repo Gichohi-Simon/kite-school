@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import { Drawer, List, ListItem } from '@material-ui/core'
+import { Drawer, List, ListItem} from '@material-ui/core'
 import { ListItemText } from '@material-ui/core'
 
 export default function DrawerComponent() {
 
     const [openDrawer, setOpenDrawer] = useState(true)
-
 
     return (
         <div>
