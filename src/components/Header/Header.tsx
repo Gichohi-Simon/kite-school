@@ -1,9 +1,10 @@
 import React from 'react'
 import useStyles from './style'
 import {
-    AppBar, Tabs, Tab, Typography, Toolbar, useMediaQuery, useTheme
+    Tabs, Tab, Typography,useMediaQuery, useTheme, Avatar
 } from '@material-ui/core'
 import DrawerComponent from '../DrawerComponent/DrawerComponent'
+import Image from 'next/image'
 
 export default function Header() {
     const classes = useStyles()
@@ -16,13 +17,19 @@ export default function Header() {
 
     return (
         <div className={classes.main}>
-            <AppBar position="fixed" color="transparent" className={classes.appBar}>
-                <Toolbar>
-                    <Typography>
-                        Logo
+                    <Typography className={classes.logo}>
+                        <Image 
+                            src="/assets/Surfer1.svg"
+                            height="100px"
+                            width="200px"
+                            alt="surfing_logo"
+                        />
+                        
                     </Typography>
+
+                    <div className={classes.navLinks}>
                     {isMatch ? <DrawerComponent /> : (
-                        <>
+                        <div className={classes.linkItems}>
                             <Tabs>
                                 <Tab label="Home" />
                             </Tabs>
@@ -33,12 +40,11 @@ export default function Header() {
                                 <Tab label="About Us" />
                             </Tabs>
                             <Tabs>
-                                <Tab label="Contact Us" />
+                                <Tab label="Contact" />
                             </Tabs>
-                        </>
+                        </div>
                     )}
-                </Toolbar>
-            </AppBar>
+                    </div>
         </div>
 
     )

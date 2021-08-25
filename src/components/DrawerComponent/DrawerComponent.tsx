@@ -9,7 +9,7 @@ export default function DrawerComponent() {
     const [openDrawer, setOpenDrawer] = useState(true)
     const classes = useStyles()
     return (
-        <div>
+        <div className={classes.main}>
             <Drawer
                 //changes positioning of drawer
                 anchor="left"
@@ -37,12 +37,12 @@ export default function DrawerComponent() {
                     </ListItem>
                     <ListItem divider button>
                         <ListItemText>
-                            Contacts Us
+                            Contacts
                         </ListItemText>
                     </ListItem>
                 </List>
             </Drawer>
-            <IconButton className={classes.menuIconContainer} onClick={() => setOpenDrawer(!openDrawer)}>
+            <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
                <MenuIcon /> 
             </IconButton>
         </div>

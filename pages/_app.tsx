@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import '../styles/globals.css'
+import useStyles from './../styles/style'
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -17,10 +18,13 @@ export default function MyApp(props: AppProps) {
     }
   }, []);
 
+  const classes = useStyles()
+
   return (
-    <React.Fragment>
+    
+    <div className={classes.main}>
       <Head>
-        <title>My page</title>
+        <title>Kenya Kitesurfing Schools</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
@@ -28,6 +32,6 @@ export default function MyApp(props: AppProps) {
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
-    </React.Fragment>
+    </div>
   );
 }

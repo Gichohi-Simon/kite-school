@@ -1,11 +1,18 @@
 import {makeStyles,createStyles} from '@material-ui/styles'
 
 export default makeStyles((theme) => createStyles({
-    appBar:{
-        display:'flex',
-        justifyContent:'space-between'
-    },
     main:{
-        backgroundColor:'',
+        display:'flex',
+    },
+    logo:{
+        
+    },
+    navLinks:{
+    //    display:'flex',
+    //    justifyContent:'center', 
+    },
+    linkItems:{
+        display:'flex',
+        justifyContent:'center'
     }
 }))
