@@ -16,12 +16,11 @@ export default function Header() {
 
     return (
         <div className={classes.main}>
-            <AppBar className={classes.appBar}>
+            <AppBar position="fixed" color="transparent" className={classes.appBar}>
                 <Toolbar>
                     <Typography>
                         Logo
                     </Typography>
-
                     {isMatch ? <DrawerComponent /> : (
                         <>
                             <Tabs>
