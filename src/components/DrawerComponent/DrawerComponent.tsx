@@ -17,26 +17,26 @@ export default function DrawerComponent() {
                 onClose={() => setOpenDrawer(false)}
                 open={openDrawer}
             >
-                <List>
+                <List >
                     {/* button gives it a hover style */}
                     {/* divider , just divides */}
                     <ListItem divider button>
-                        <ListItemText>
+                        <ListItemText className={classes.list}>
                             Home
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
-                        <ListItemText>
+                        <ListItemText className={classes.list}>
                             Lessons
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
-                        <ListItemText>
+                        <ListItemText className={classes.list}>
                             Courses
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
-                        <ListItemText>
+                        <ListItemText className={classes.list}>
                             Contacts D
                         </ListItemText>
                     </ListItem>
