@@ -19,7 +19,7 @@ export default function Hero() {
                         everyone interested in this rapidly<br />  growing sport
                     </Typography>
 
-                    <Button variant="contained" color="secondary">
+                    <Button variant="contained" color="secondary" className={classes.button}>
                         Get in Touch
                     </Button>
                 </div>

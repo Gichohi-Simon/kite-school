@@ -31,9 +31,12 @@ export default makeStyles((theme:Theme) => createStyles({
         marginTop:'30px',
         marginBottom:'30px'
     },
+    button:{
+        backgroundColor:'#30d5c8'
+    },
     container2:{
-        webkitBoxShaow:'50px 0px 12px 20px #DDF8F6',
-        boxShadow:'50px 0px 12px 20px #DDF8F6;',
+        webkitBoxShaow:'50px 0px 0px 20px #DDF8F6',
+        boxShadow:'50px 0px 0px 20px #DDF8F6;',
        marginTop:'-40px',
        position:'relative',
        left:60,
@@ -58,8 +61,8 @@ export default makeStyles((theme:Theme) => createStyles({
         }
     },
     Wrapper2Img:{
-        webkitBoxShaow:'-22px 38px 15px 11px #DDF8F6',
-        boxShadow:'-22px 38px 15px 11px #DDF8F6',
+        webkitBoxShaow:'-22px 38px 0px 11px #DDF8F6',
+        boxShadow:'-22px 38px 0px 11px #DDF8F6',
         paddingLeft:'0px',
         paddingRight:'0px',
         [theme.breakpoints.down('sm')]:{

@@ -1,0 +1,71 @@
+import {createStyles,makeStyles} from '@material-ui/core/styles'
+import {Theme} from '@material-ui/core'
+
+export default makeStyles((theme:Theme) =>createStyles({
+    main:{
+        marginTop:'150px',
+        paddingLeft:'50px',
+        paddingRight:'50px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'70px',
+            paddingLeft:'10px',
+            paddingRight:'10px',
+        }
+    },
+    lessonsTitle:{
+        fontSize:'25px',
+        fontWeight:700,
+        textAlign:'center',
+        marginBottom:'80px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'40px',
+            marginBottom:'40px',
+        }
+    },
+    card:{
+        marginTop:'0px',
+        marginBottom:'20px',
+        paddingLeft:'0px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'30px',
+            marginBottom:'20px',
+            paddingLeft:'50px',
+        }
+        // webkitBoxShaow:'1px -6px 0px 13px #DDF8F6',
+        // boxShadow:'1px -6px 0px 13px #DDF8F6',
+    },
+    buttonContainer:{
+        paddingLeft:'0px',
+        [theme.breakpoints.down('sm')]:{
+            paddingLeft:'100px',
+        }
+    },
+    button:{
+         marginLeft:'30px',
+         marginBottom:'30px',
+         backgroundColor:'#30d5c8'
+    },
+    description:{
+       fontWeight:600, 
+    },
+    lessonVideo:{
+        display:'flex',
+        marginTop:'200px',
+        marginBottom:'200px',
+        [theme.breakpoints.down('sm')]:{
+            display:'block',
+            marginTop:'100px',
+            marginBottom:'100px',
+        }
+    },
+    lessonText:{
+       display:'flex',
+       alignItems:'center',
+       paddingLeft:'30px',
+       marginTop:'0px',
+       fontWeight:600,
+       [theme.breakpoints.down('sm')]:{
+        marginTop:'30px',
+    }
+    }
+}))
