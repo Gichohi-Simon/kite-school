@@ -42,7 +42,7 @@ export default function DrawerComponent() {
                     </ListItem>
                 </List>
             </Drawer>
-            <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
+            <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.burger}>
                <MenuIcon /> 
             </IconButton>
         </div>

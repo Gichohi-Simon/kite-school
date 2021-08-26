@@ -5,6 +5,11 @@ export default makeStyles((theme:Theme) => createStyles({
    main:{
        display:'flex',
        justifyContent:'flex-end'
+   },
+   burger:{
+      paddingLeft:'150px', 
    }
 }))
+
+
 
