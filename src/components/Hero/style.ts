@@ -60,10 +60,20 @@ export default makeStyles((theme:Theme) => createStyles({
     Wrapper2Img:{
         webkitBoxShaow:'-22px 38px 15px 11px #DDF8F6',
         boxShadow:'-22px 38px 15px 11px #DDF8F6',
+        paddingLeft:'0px',
+        paddingRight:'0px',
+        [theme.breakpoints.down('sm')]:{
+            paddingLeft:'10px',
+            paddingRight:'10px',
+         }
     },
     Wrapper2Text:{
         fontWeight:600,
         fontSize:'16px',
-        paddingLeft:'60px'
+        paddingLeft:'60px',
+        marginTop:'0px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'20px',
+        }
     }
 }))
