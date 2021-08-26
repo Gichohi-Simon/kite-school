@@ -5,12 +5,6 @@ export default makeStyles((theme:Theme) => createStyles({
     main:{
         display:'flex',
     },
-    color:{
-        width:'597px',
-        height:'500px',
-        backgroundColor:'#ddf8f6',
-        marginLeft:'40px'
-    },
     linkItems:{
         display:'flex'
     },
@@ -24,5 +18,11 @@ export default makeStyles((theme:Theme) => createStyles({
     linkText:{
        textDecoration:'none',
        color:'black'
-    }
+    },
+    color:{
+        width:'597px',
+        height:'500px',
+        backgroundColor:'#ddf8f6',
+        marginLeft:'40px'
+    },
 }))

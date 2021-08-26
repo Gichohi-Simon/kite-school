@@ -53,7 +53,7 @@ export default function Header() {
             </div>
                 
             <div className={classes.color}>
-
+                Hello
             </div>
         </div>
 
