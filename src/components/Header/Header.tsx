@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core'
 import DrawerComponent from '../DrawerComponent/DrawerComponent'
 import Image from 'next/image'
+import Hero from '../Hero/Hero';
 
 export default function Header() {
     const classes = useStyles()
@@ -14,6 +15,7 @@ export default function Header() {
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <div className={classes.main}>
+            <div className={classes.headerWrapper}>
             <Typography>
                 <Image
                     src="/assets/Surfer1.svg"
@@ -39,7 +41,7 @@ export default function Header() {
                             </li>
                             <li className={classes.links}>
                                 <Typography >
-                                    <a href="#about" className={classes.linkText}>About Us</a>
+                                    <a href="#about" className={classes.linkText}>About</a>
                                 </Typography>
                             </li>
                             <li className={classes.links}>
@@ -51,10 +53,11 @@ export default function Header() {
                     </div>
                 )}
             </div>
-                
-            <div className={classes.color}>
-                Hello
             </div>
+            <div className={classes.heroSection}>
+            <Hero />
+            </div>
+          
         </div>
 
     )

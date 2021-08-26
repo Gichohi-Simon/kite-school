@@ -3,14 +3,20 @@ import {makeStyles,createStyles} from '@material-ui/core/styles'
 
 export default makeStyles((theme:Theme) => createStyles({
     main:{
+    //    backgroundColor:'#ddf8f6'
+    },
+    headerWrapper:{
         display:'flex',
+        // [theme.breakpoints.down('sm')]:{
+        //     display:'block'
+        // }
     },
     linkItems:{
         display:'flex'
     },
     links:{
        listStyle:'none',
-       paddingLeft:'20px',
+       paddingLeft:'30px',
        fontSize:'32px',
        fontWeight:'bold',
        textTransform:'uppercase'
@@ -19,10 +25,10 @@ export default makeStyles((theme:Theme) => createStyles({
        textDecoration:'none',
        color:'black'
     },
-    color:{
-        width:'597px',
-        height:'500px',
-        backgroundColor:'#ddf8f6',
-        marginLeft:'40px'
-    },
+    heroSection:{
+        marginTop:'40px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'0px'
+        }
+    }
 }))
