@@ -50,6 +50,8 @@ export default makeStyles((theme:Theme) => createStyles({
         bottom:0,
         paddingLeft:'10px',
         paddingRight:'10px',
+        webkitBoxShaow:'0px 0px 0px 0px #DDF8F6',
+        boxShadow:'0px 0px 0px 0px #DDF8F6;',
        }
     },
     Wrapper2:{
@@ -68,6 +70,8 @@ export default makeStyles((theme:Theme) => createStyles({
         [theme.breakpoints.down('sm')]:{
             paddingLeft:'10px',
             paddingRight:'10px',
+            webkitBoxShaow:'0px 0px 0px 0px #DDF8F6',
+            boxShadow:'0px 0px 0px 0px #DDF8F6;',
          }
     },
     Wrapper2Text:{
