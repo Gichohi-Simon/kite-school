@@ -53,8 +53,10 @@ export default makeStyles((theme: Theme) => createStyles({
     },
     container2Image:{
         // backgroundColor:'red',
-        paddingRight:'100px',
-        display:'flex'
+        display:'flex',
+        [theme.breakpoints.down('sm')]: {
+            display:'block'
+          } 
     },
     container2Text:{
        paddingLeft:'250px',
@@ -64,5 +66,11 @@ export default makeStyles((theme: Theme) => createStyles({
        [theme.breakpoints.down('sm')]: {
         paddingLeft:'0px'
       } 
+    },
+    ratings:{
+        marginTop:'150px',
+        [theme.breakpoints.down('sm')]: {
+            marginTop:'80px',
+          } 
     }
 }))

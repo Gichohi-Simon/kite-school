@@ -2,8 +2,9 @@ import React from 'react'
 import useStyles from './style'
 import { Typography } from '@material-ui/core';
 import Image from 'next/image';
+import Ratings from '../Reviews/Reviews';
 
-export default function style() {
+export default function About() {
     const classes = useStyles()
 
     return (
@@ -46,6 +47,9 @@ export default function style() {
                         Our schools has a team of friendly,proffesional instructors who are always on hand to give you the best possible holiday by teaching you the sport in the safest way possible whilst making sure you have fun a long the way
                     </Typography>
                 </div>
+            </div>
+            <div className={classes.ratings}>
+            <Ratings />
             </div>
         </div>
     )
