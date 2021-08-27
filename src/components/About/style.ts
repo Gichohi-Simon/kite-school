@@ -53,7 +53,8 @@ export default makeStyles((theme: Theme) => createStyles({
     },
     container2Image:{
         // backgroundColor:'red',
-        paddingRight:'100px'
+        paddingRight:'100px',
+        display:'flex'
     },
     container2Text:{
        paddingLeft:'250px',
