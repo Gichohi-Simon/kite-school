@@ -1,12 +1,17 @@
-import { Button, Grid, Typography } from '@material-ui/core'
-import React from 'react'
-import useStyles from './style'
-import { packages } from '../../constants/constants'
-import Image from 'next/image'
+import { Button, Grid, Typography } from '@material-ui/core';
+import React from 'react';
+import useStyles from './style';
+import { packages } from '../../constants/constants';
+import Image from 'next/image';
+import Modal from '../Modal/Modal';
+import {confirmDialog} from '../Modal/Modal';
+
+
 
 export default function Lessons() {
     const classes = useStyles()
-
+    const handleSubmit = () => console.log('Okay');
+    
     return (
         <div className={classes.main} id="lessons">
             <Typography className={classes.lessonsTitle}>
@@ -26,9 +31,14 @@ export default function Lessons() {
                          </div>
                         <br />
                         <div className={classes.buttonContainer}>
-                        <Button variant="contained" className={classes.button}>
+                        <Button 
+                        variant="contained" 
+                        className={classes.button}
+                        onClick={() => confirmDialog('Are you sure that you would like to delete this post', handleSubmit)}
+                        >
                             {lesson.title}
                         </Button>
+                        <Modal />
                         </div>
                         <Typography className={classes.description}>
                             {lesson.description}
