@@ -1,26 +1,9 @@
 import React from 'react';
 import useStyles from './style';
-import {Modal,Button} from '@material-ui/core';
+import {Modal,Button, Paper} from '@material-ui/core';
 
 const SimpleModal: React.FC = () => {
     const classes = useStyles();
-
-    function rand() {
-        return Math.round(Math.random() * 20) - 10;
-    }
-    
-    function getModalStyle() {
-        const top = 0 + rand();
-        const left = 0 + rand();
-    
-        return {
-            top: `${top}%`,
-            left: `${left}%`,
-            transform: `translater(-${top}%, -${left}%)`,
-        }
-    }
-
-    const [modalStyle] = React.useState(getModalStyle);
     const [open,setOpen] = React.useState(false);
 
     const handleOpen = () => {
@@ -31,17 +14,8 @@ const SimpleModal: React.FC = () => {
         setOpen(false)
     }
 
-    const body = (
-        <div style={modalStyle} className={classes.paper}>
-        <h2 id="simple-modal-title">Text in a modal</h2>
-        <p id="simple-modal-description">
-         I am mr price model
-        </p>
-      </div>
-    )
-
     return (
-        <div>
+        <div className={classes.main}>
             <Button variant="contained" onClick={handleOpen}>
                 Beginner
             </Button>
@@ -51,7 +25,14 @@ const SimpleModal: React.FC = () => {
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
             >
-                {body}
+                {/* {body} */}
+                <Paper
+                 elevation={3}
+                 variant="outlined"
+                 className={classes.paper}
+                 >
+                    I am mr price modal
+                </Paper>
             </Modal>
         </div>
     )

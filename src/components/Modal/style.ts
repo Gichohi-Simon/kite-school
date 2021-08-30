@@ -1,13 +1,21 @@
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Theme } from '@material-ui/core'
+import { Fullscreen } from "@material-ui/icons";
 
 export default makeStyles((theme: Theme) => createStyles({
+    main:{
+       marginTop:'20px',
+       marginBottom:'20px'
+    },
     paper: {
-        position: 'absolute',
-        width:400,
-        backgroundColor:theme.palette.background.paper,
-        border:'2px solid #000',
-        boxShadow:theme.shadows[5],
-        padding:theme.spacing(2,4,3)
+        
+        marginTop:'100px',
+        position: 'relative',
+        width:'80%',
+        // boxShadow:theme.shadows[5],
+        padding:theme.spacing(2,4,3),
+        display:'flex',
+        alignContent:'center',
+        justifyContent:'center'
     }
 }))
