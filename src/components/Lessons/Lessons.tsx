@@ -42,13 +42,13 @@ export default function Lessons() {
                        </Grid> 
                     ))}
                 </Grid> */}
-                <Grid container spacing={3}>
+                <Grid container spacing={6} className={classes.grid}>
                     <Grid item key="1" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
                                 src="/assets/wings.jpg"
-                                width="250px"
-                                height="200px"
+                                width="230px"
+                                height="180px"
                             />
                         </div>
                         <br />
@@ -59,13 +59,18 @@ export default function Lessons() {
                         <Typography className={classes.description}>
                             Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
                         </Typography>
+
+                        <div className={classes.blue}>
+
+                        </div>
                     </Grid>
+
                     <Grid item key="2" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
                                 src="/assets/walk.jpg"
-                                width="250px"
-                                height="200px"
+                                width="230px"
+                                height="180px"
                             />
                         </div>
                         <br />
@@ -75,13 +80,19 @@ export default function Lessons() {
                         <Typography className={classes.description}>
                             Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
                         </Typography>
+
+                        <div className={classes.blue1}>
+
+                        </div>
                     </Grid>
+
+
                     <Grid item key="3" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
                                 src="/assets/skiil.jpg"
-                                width="250px"
-                                height="200px"
+                                width="230px"
+                                height="180px"
                             />
                         </div>
                         <br />
@@ -91,23 +102,11 @@ export default function Lessons() {
                         <Typography className={classes.description}>
                             Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
                         </Typography>
+                        <div className={classes.blue2}>
+                        </div>
                     </Grid>
                 </Grid>
             </div>
-
-            <div className={classes.lessonVideo}>
-                <Image
-                    src="/assets/sand.jpg"
-                    width="600px"
-                    height="300px"
-                />
-
-                <Typography className={classes.lessonText}>
-                    Watch one of our clients transition from beginner to pro
-                </Typography>
-            </div>
-
-            {/* <SimpleModal /> */}
         </div>
     )
 }

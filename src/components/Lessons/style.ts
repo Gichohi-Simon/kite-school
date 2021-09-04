@@ -3,13 +3,19 @@ import {Theme} from '@material-ui/core'
 
 export default makeStyles((theme:Theme) =>createStyles({
     main:{
-        marginTop:'150px',
+        marginTop:'200px',
         paddingLeft:'50px',
         paddingRight:'50px',
         [theme.breakpoints.down('sm')]:{
             marginTop:'70px',
             paddingLeft:'10px',
             paddingRight:'10px',
+        }
+    },
+    grid:{
+        marginTop:'100px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'50px'
         }
     },
     lessonsTitle:{
@@ -39,27 +45,45 @@ export default makeStyles((theme:Theme) =>createStyles({
             textAlign:'center',
         }
     },
+
     description:{
        fontWeight:600, 
     },
-    lessonVideo:{
-        display:'flex',
-        marginTop:'200px',
-        marginBottom:'200px',
-        [theme.breakpoints.down('sm')]:{
-            display:'block',
-            marginTop:'100px',
-            marginBottom:'100px',
+
+    blue: {
+        position: 'absolute',
+        left: '300px',
+        top: '860px',
+        zIndex: -1,
+        backgroundColor: '#DDF8F6',
+        width: '230px',
+        height: '250px',
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: 'white',
         }
     },
-    lessonText:{
-       display:'flex',
-       alignItems:'center',
-       paddingLeft:'30px',
-       marginTop:'0px',
-       fontWeight:600,
-       [theme.breakpoints.down('sm')]:{
-        marginTop:'30px',
-    }
-    }
+    blue1: {
+        position: 'absolute',
+        left: '680px',
+        top: '860px',
+        zIndex: -1,
+        backgroundColor: '#DDF8F6',
+        width: '230px',
+        height: '250px',
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: 'white',
+        }
+    },
+    blue2:{
+        position: 'absolute',
+        left: '1060px',
+        top: '860px',
+        zIndex: -1,
+        backgroundColor: '#DDF8F6',
+        width: '230px',
+        height: '250px',
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: 'white',
+        }
+    },
 }))
