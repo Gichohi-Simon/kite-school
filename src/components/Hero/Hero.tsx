@@ -27,12 +27,15 @@ export default function Hero() {
                     <Image
                         src='/assets/fast.jpg'
                         alt="surfer_image"
-                        width='550px'
-                        height='400px'
+                        width='650px'
+                        height='420px'
                     />
                 </div>
+
+                <div className={classes.blue}> 
+                </div>
             </div>
-            <div className={classes.Wrapper2}>
+            {/* <div className={classes.Wrapper2}>
                 <div className={classes.Wrapper2Img}>
                 <Image
                     src='/assets/walk.jpg'
@@ -41,13 +44,12 @@ export default function Hero() {
                     height='400px'
                 />
                 </div>
-
                 <Typography className={classes.Wrapper2Text}>
                     Here's a small video to <br />
                     take you through what <br />
                     Kitesurfing entails
                 </Typography>
-            </div>
+            </div> */}
 
         </div>
     )

@@ -15,7 +15,7 @@ export default function Home() {
         <Header />
         <Lessons />
         <About />
-        <Footer />
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Theme } from '@material-ui/core'
-import { Fullscreen } from "@material-ui/icons";
 
 export default makeStyles((theme: Theme) => createStyles({
     main:{
