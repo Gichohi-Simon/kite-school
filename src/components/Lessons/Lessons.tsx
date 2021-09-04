@@ -1,20 +1,19 @@
-import { Button, Grid, Typography } from '@material-ui/core';
+import {Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './style';
 // import { packages } from '../../constants/constants';
 import Image from 'next/image';
 import SimpleModal from '../Modal/SimpleModal';
-// import SimpleModal from '../Modal/SimpleModal'
+import SimpleModal1 from '../Modal/SimpleModal1';
+import SimpleModal2 from '../Modal/SimpleModal2';
 
 export default function Lessons() {
     const classes = useStyles()
-
     return (
         <div className={classes.main} id="lessons">
             <Typography className={classes.lessonsTitle}>
                 Lessons
             </Typography>
-
             <div>
                 {/* <Grid container spacing={3}>
                     {packages.map((lesson) => (
@@ -54,13 +53,6 @@ export default function Lessons() {
                         </div>
                         <br />
                         <div className={classes.buttonContainer}>
-                            {/* <Button
-                                variant="contained"
-                                className={classes.button}
-                            >
-                                Beginner
-                              
-                            </Button> */}
                             <SimpleModal />
                             
                         </div>
@@ -78,12 +70,7 @@ export default function Lessons() {
                         </div>
                         <br />
                         <div className={classes.buttonContainer}>
-                            <Button
-                                variant="contained"
-                                className={classes.button}
-                            >
-                                Amateur
-                            </Button>
+                            <SimpleModal1 />
                         </div>
                         <Typography className={classes.description}>
                             Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
@@ -99,12 +86,7 @@ export default function Lessons() {
                         </div>
                         <br />
                         <div className={classes.buttonContainer}>
-                            <Button
-                                variant="contained"
-                                className={classes.button}
-                            >
-                                Pro
-                            </Button>
+                            <SimpleModal2 />
                         </div>
                         <Typography className={classes.description}>
                             Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.

@@ -31,19 +31,13 @@ export default makeStyles((theme:Theme) =>createStyles({
             marginBottom:'20px',
             paddingLeft:'50px',
         }
-        // webkitBoxShaow:'1px -6px 0px 13px #DDF8F6',
-        // boxShadow:'1px -6px 0px 13px #DDF8F6',
+       
     },
     buttonContainer:{
-        paddingLeft:'0px',
+        textAlign:'start',
         [theme.breakpoints.down('sm')]:{
-            paddingLeft:'100px',
+            textAlign:'center',
         }
-    },
-    button:{
-         marginLeft:'30px',
-         marginBottom:'30px',
-         backgroundColor:'#30d5c8'
     },
     description:{
        fontWeight:600, 
