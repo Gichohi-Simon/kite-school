@@ -31,7 +31,7 @@ export default function Header() {
                         <ul className={classes.linkItems}>
                             <li className={classes.links}>
                                 <Typography>
-                                    <a href="#home" className={classes.linkText}>Home</a>
+                                    <a href="/" className={classes.linkText}>Home</a>
                                 </Typography>
                             </li>
                             <li className={classes.links}>

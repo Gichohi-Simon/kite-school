@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Drawer, IconButton, List, ListItem} from '@material-ui/core'
 import { ListItemText } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
+import Link from 'next/link'
 
 import useStyles from './style'
 export default function DrawerComponent() {
@@ -22,22 +23,38 @@ export default function DrawerComponent() {
                     {/* divider , just divides */}
                     <ListItem divider button>
                         <ListItemText className={classes.list}>
-                            Home
+                            <Link href="/">
+                                <a className={classes.listLinks}>
+                                Home
+                                </a>
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
                         <ListItemText className={classes.list}>
-                            Lessons
+                        <Link href="#lessons">
+                                <a className={classes.listLinks}>
+                                Lessons
+                                </a>
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
                         <ListItemText className={classes.list}>
-                            Courses
+                        <Link href="#about">
+                                <a className={classes.listLinks}>
+                                Courses
+                                </a>
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <ListItem divider button>
                         <ListItemText className={classes.list}>
-                            Contacts D
+                        <Link href="#contact">
+                                <a className={classes.listLinks}>
+                                Contacts D
+                                </a>
+                            </Link>
                         </ListItemText>
                     </ListItem>
                 </List>

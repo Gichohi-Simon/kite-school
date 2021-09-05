@@ -12,6 +12,9 @@ export default makeStyles((theme:Theme) => createStyles({
    list:{
       marginLeft:'30px',
       marginRight:'30px'
+   },
+   listLinks:{
+      textDecoration:'none',
    }
 }))
 
