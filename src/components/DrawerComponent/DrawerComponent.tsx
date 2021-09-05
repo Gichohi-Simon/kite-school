@@ -43,7 +43,7 @@ export default function DrawerComponent() {
                         <ListItemText className={classes.list}>
                         <Link href="#about">
                                 <a className={classes.listLinks}>
-                                Courses
+                                About
                                 </a>
                             </Link>
                         </ListItemText>
@@ -52,7 +52,7 @@ export default function DrawerComponent() {
                         <ListItemText className={classes.list}>
                         <Link href="#contact">
                                 <a className={classes.listLinks}>
-                                Contacts D
+                                Contacts
                                 </a>
                             </Link>
                         </ListItemText>
