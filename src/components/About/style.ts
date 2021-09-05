@@ -3,11 +3,13 @@ import { Theme } from "@material-ui/core";
 
 export default makeStyles((theme: Theme) => createStyles({
     main: {
+        marginTop:'200px',
         paddingLeft: '50px',
         paddingRight: '50px',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '10px',
             paddingRight: '10px',
+            marginTop:'100px',
         }
     },
     title: {
@@ -17,6 +19,7 @@ export default makeStyles((theme: Theme) => createStyles({
        
     },
     mainSection: {
+        marginTop:'100px',
         display: 'flex',
         [theme.breakpoints.down('sm')]: {
            display:'block'
@@ -38,39 +41,32 @@ export default makeStyles((theme: Theme) => createStyles({
             paddingLeft:'0px'
           }
     },
+
+    blue: {
+        position: 'absolute',
+        left: '530px',
+        top: '1600px',
+        zIndex: -1,
+        backgroundColor: '#DDF8F6',
+        width: '600px',
+        height: '500px',
+        [theme.breakpoints.down('xs')]: {
+            backgroundColor: 'white',
+        }
+    },
     container1Text:{
         fontSize:'16px',
         fontWeight:600,
-        marginTop:'50px'
+        marginTop:'80px'
     },
-    container2:{
-       display:'flex',
-       marginTop:'100px',
-       [theme.breakpoints.down('sm')]: {
-        display:'block'
-      } 
-       
+
+    maps:{
+        marginTop:'100px'
     },
-    container2Image:{
-        // backgroundColor:'red',
-        display:'flex',
-        [theme.breakpoints.down('sm')]: {
-            display:'block'
-          } 
-    },
+
     container2Text:{
-       paddingLeft:'250px',
-       fontSize:'16px',
-       fontWeight:600,
-       marginTop:'20px',
-       [theme.breakpoints.down('sm')]: {
-        paddingLeft:'0px'
-      } 
-    },
-    ratings:{
-        marginTop:'150px',
-        [theme.breakpoints.down('sm')]: {
-            marginTop:'80px',
-          } 
+        fontSize:'16px',
+        fontWeight:600,
+        marginTop:'20px'
     }
 }))
