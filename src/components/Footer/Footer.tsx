@@ -104,7 +104,7 @@ export default function Footer() {
 
             <div className={classes.footer}>
                 <Typography className={classes.footerText}>
-                Developed By <a href="/">Gichohi Simon</a>
+                Developed By <a href="/" className={classes.footerLink}>Gichohi Simon</a>
                 </Typography>
             </div>
         </div>

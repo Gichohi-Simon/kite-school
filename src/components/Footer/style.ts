@@ -58,5 +58,8 @@ export default makeStyles((theme:Theme) => createStyles({
         [theme.breakpoints.down('sm')]: {
             marginTop:'20px',
         }
+    },
+    footerLink:{
+        textDecoration:'none'
     }
 }));
