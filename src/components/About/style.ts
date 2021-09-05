@@ -9,7 +9,7 @@ export default makeStyles((theme: Theme) => createStyles({
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '10px',
             paddingRight: '10px',
-            marginTop:'100px',
+            marginTop:'70px',
         }
     },
     title: {
@@ -22,7 +22,8 @@ export default makeStyles((theme: Theme) => createStyles({
         marginTop:'100px',
         display: 'flex',
         [theme.breakpoints.down('sm')]: {
-           display:'block'
+           display:'block',
+           marginTop:'50px',
         }
     },
     heading: {
@@ -57,11 +58,18 @@ export default makeStyles((theme: Theme) => createStyles({
     container1Text:{
         fontSize:'16px',
         fontWeight:600,
-        marginTop:'80px'
+        marginTop:'80px',
+        [theme.breakpoints.down('xs')]: {
+            marginTop:'40px',
+        }
     },
 
     maps:{
-        marginTop:'100px'
+        marginTop:'100px',
+        [theme.breakpoints.down('xs')]: {
+            marginTop:'50px',
+        }
+        
     },
 
     container2Text:{
