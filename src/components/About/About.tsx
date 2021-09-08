@@ -20,7 +20,7 @@ export default function About() {
                 <div className={classes.container1}>
                    
                     <Image
-                        src="/assets/team.jpg"
+                        src="/assets/tourist-holding-kite-on-beach.jpg"
                         width="600px"
                         height="400px"
                     />

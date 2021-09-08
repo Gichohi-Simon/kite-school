@@ -25,7 +25,7 @@ export default function Hero() {
                 </div>
                 <div className={classes.container2}>
                     <Image
-                        src='/assets/fast.jpg'
+                        src='/assets/skill1.jpg'
                         alt="surfer_image"
                         width='650px'
                         height='420px'
