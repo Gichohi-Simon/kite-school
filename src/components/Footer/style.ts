@@ -17,33 +17,45 @@ export default makeStyles((theme:Theme) => createStyles({
         textAlign:'center',
         fontSize:'25px',
         fontWeight:700,
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'20px',
+        }
+        
     },
     mainGrid:{
         marginTop:'50px',
         [theme.breakpoints.down('sm')]: {
-            marginBottom:'0px',
+            marginTop:'0px',
         }
     },
     gridText:{
         fontSize:'16px',
         fontWeight:600,
         textAlign:'center',
-        textTransform:'uppercase'
-        
+        textTransform:'uppercase',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'14px',
+        }
     },
     gridDescription:{
         marginTop:'20px',
         fontSize:'16px',
         fontWeight:600,
         textAlign:'center',
-      
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'14px',
+        }
     },
     list:{
         display:'block',
         textAlign:'center',
     },
     siteIcons:{
+        fontSize:'16px',
         textDecoration:'none',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'14px',
+        }
     },
     icons:{
         fontSize:'20px'
@@ -57,9 +69,14 @@ export default makeStyles((theme:Theme) => createStyles({
         fontWeight:700,
         [theme.breakpoints.down('sm')]: {
             marginTop:'20px',
+            fontSize:'14px',
         }
     },
     footerLink:{
-        textDecoration:'none'
+        textDecoration:'none',
+        fontSize:'16px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize:'14px',
+        }
     }
 }));
