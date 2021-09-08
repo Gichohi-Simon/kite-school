@@ -57,7 +57,7 @@ export default function Lessons() {
                             
                         </div>
                         <Typography className={classes.description}>
-                            Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
+                        For this choice you get a personalized one on one trainig session. This lesson is targeted to specific topics requsted by you.
                         </Typography>
 
                         <div className={classes.blue}>
@@ -78,7 +78,7 @@ export default function Lessons() {
                             <SimpleModal1 />
                         </div>
                         <Typography className={classes.description}>
-                            Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
+                        For this package you get to share a trainer with another trainee thereby saving on the training cost. 
                         </Typography>
 
                         <div className={classes.blue1}>
@@ -100,7 +100,7 @@ export default function Lessons() {
                             <SimpleModal2 />
                         </div>
                         <Typography className={classes.description}>
-                            Our Beginner kitesurfing Lessons are tailored to suit each clients level in order to enable them to make the maximum progress possible in the shortest time possible. Our group training courses consist of no more that 4 clients at time.
+                        We offer rental of kite surfing equipments at very competitive rates as listed below.
                         </Typography>
                         <div className={classes.blue2}>
                         </div>

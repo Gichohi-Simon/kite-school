@@ -46,7 +46,7 @@ export default makeStyles((theme: Theme) => createStyles({
     blue: {
         position: 'absolute',
         left: '530px',
-        top: '1600px',
+        top: '1550px',
         zIndex: -1,
         backgroundColor: '#DDF8F6',
         width: '600px',

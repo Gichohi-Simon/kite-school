@@ -21,7 +21,7 @@ const SimpleModal2: React.FC = () => {
                 onClick={handleOpen}
                 className={classes.modalButton}
             >
-                Kite Rentals
+                Kite and Board Rentals
             </Button>
             <Modal
                 open={open}
