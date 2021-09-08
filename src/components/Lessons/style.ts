@@ -36,7 +36,7 @@ export default makeStyles((theme:Theme) =>createStyles({
         [theme.breakpoints.down('sm')]:{
             marginTop:'30px',
             marginBottom:'20px',
-            paddingLeft:'60px',
+            paddingLeft:'80px',
         }
        
     },
