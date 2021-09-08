@@ -9,6 +9,10 @@ export default makeStyles((theme: Theme) => createStyles({
     modalButton:{
         color:'white',
         backgroundColor:' #30d5c8',
+        fontSize:'14px',
+        [theme.breakpoints.down('xs')]:{
+          fontSize:'12px'
+        }
     },
     paper: {
         margin:'auto',
@@ -40,10 +44,22 @@ export default makeStyles((theme: Theme) => createStyles({
     },
     modalBody:{
         padding:theme.spacing(2,4,3),
-        textAlign:'center'
+        textAlign:'center',
+    },
+    modalBodyText:{
+        fontSize:'16px',
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'12px'
+        }
     },
     modalPrice:{
         textAlign:'center',
         marginTop:'20px'
+    },
+    modalPriceText:{
+        fontSize:'16px',
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'12px'
+        }
     }
 }))

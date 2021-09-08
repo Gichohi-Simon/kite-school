@@ -1,7 +1,6 @@
 import {Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './style';
-// import { packages } from '../../constants/constants';
 import Image from 'next/image';
 import SimpleModal from '../Modal/SimpleModal';
 import SimpleModal1 from '../Modal/SimpleModal1';
@@ -14,34 +13,7 @@ export default function Lessons() {
             <Typography className={classes.lessonsTitle}>
                 Lessons
             </Typography>
-            <div>
-                {/* <Grid container spacing={3}>
-                    {packages.map((lesson) => (
-                        <Grid item key={lesson.title} xs={12} md={6} lg={4}>
-                        <div className={classes.card}>
-                           <Image 
-                            src={lesson.image}
-                            width="250px"
-                            height="200px"
-                        />
-                         </div>
-                        <br />
-                        <div className={classes.buttonContainer}>
-                        <Button 
-                        variant="contained" 
-                        className={classes.button}
-                        onClick={() => confirmDialog('Are you sure that you would like to delete this post', handleSubmit)}
-                        >
-                            {lesson.title}
-                        </Button>
-                        <Modal />
-                        </div>
-                        <Typography className={classes.description}>
-                            {lesson.description}
-                        </Typography>
-                       </Grid> 
-                    ))}
-                </Grid> */}
+            <div>        
                 <Grid container spacing={6} className={classes.grid}>
                     <Grid item key="1" xs={12} md={6} lg={4}>
                         <div className={classes.card}>

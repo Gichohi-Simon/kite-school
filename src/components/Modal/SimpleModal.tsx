@@ -39,10 +39,10 @@ const SimpleModal: React.FC = () => {
                      </div>
                    
                    <div className={classes.modalBody}>
-                   <Typography>For this choice you get a personalized one on one trainig session. This lesson is targeted to specific topics requsted by you. Below are our competitive prices:</Typography>
+                   <Typography className={classes.modalBodyText}>For this choice you get a personalized one on one trainig session. This lesson is targeted to specific topics requsted by you. Below are our competitive prices:</Typography>
                    <div className={classes.modalPrice}>
-                   <Typography> €60 1 Hr Lessons</Typography>
-                    <Typography>€80 2 Hrs Lessons</Typography>
+                   <Typography className={classes.modalPriceText}> €60 1 Hr Lessons</Typography>
+                    <Typography className={classes.modalPriceText}>€80 2 Hrs Lessons</Typography>
                    </div>
                    </div>
                 </Paper>

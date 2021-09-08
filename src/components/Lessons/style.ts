@@ -26,6 +26,7 @@ export default makeStyles((theme:Theme) =>createStyles({
         [theme.breakpoints.down('sm')]:{
             marginTop:'40px',
             marginBottom:'40px',
+            fontSize:'20px'
         }
     },
     card:{
@@ -35,7 +36,7 @@ export default makeStyles((theme:Theme) =>createStyles({
         [theme.breakpoints.down('sm')]:{
             marginTop:'30px',
             marginBottom:'20px',
-            paddingLeft:'50px',
+            paddingLeft:'60px',
         }
        
     },
@@ -48,6 +49,10 @@ export default makeStyles((theme:Theme) =>createStyles({
 
     description:{
        fontWeight:600, 
+       fontSize: '16px',
+       [theme.breakpoints.down('sm')]:{
+        fontSize: '14px',
+    }
     },
 
     blue: {
