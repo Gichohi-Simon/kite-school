@@ -39,14 +39,14 @@ const SimpleModal1: React.FC = () => {
                     </div>
 
                     <div className={classes.modalBody}>
-                        <Typography>For this package you get to share a trainer with another trainee thereby saving on the training cost. the rates for the 2 people per instructor are as follows:
+                        <Typography className={classes.modalBodyText}>For this package you get to share a trainer with another trainee thereby saving on the training cost. the rates for the 2 people per instructor are as follows:
                             <br />
                             (prices are per person)
                         </Typography>
                         <div className={classes.modalPrice}>
-                            <Typography>  €300 9Hrs Lesson Package - 3 Days.</Typography>
-                            <Typography> €360 12Hrs Lesson Package - 4 Days.</Typography>
-                            <Typography>€450 15 Hrs Lesson Package - 6 Days.</Typography>
+                            <Typography className={classes.modalPriceText}>  €300 9Hrs Lesson Package - 3 Days.</Typography>
+                            <Typography className={classes.modalPriceText}> €360 12Hrs Lesson Package - 4 Days.</Typography>
+                            <Typography className={classes.modalPriceText}>€450 15 Hrs Lesson Package - 6 Days.</Typography>
                         </div>
                     </div>
                 </Paper>

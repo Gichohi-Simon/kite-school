@@ -23,7 +23,7 @@ export default makeStyles((theme: Theme) => createStyles({
         alignContent:'center',
         justifyContent:'center',
         [theme.breakpoints.down('xs')]:{
-            height:'500px',
+            height:'300px',
         }
     },
     modalTitle:{

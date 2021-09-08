@@ -39,16 +39,16 @@ const SimpleModal2: React.FC = () => {
                     </div>
 
                     <div className={classes.modalBody}>
-                        <Typography>We offer rental of kite surfing equipments at very competitive rates as listed below:
+                        <Typography className={classes.modalBodyText}>We offer rental of kite surfing equipments at very competitive rates as listed below:
                         </Typography>
                         <div className={classes.modalPrice}>
-                            <Typography>  €25 1 Hour Full Rig.</Typography>
-                            <Typography>€50 Half Day (3Hrs) Full Rig..</Typography>
-                            <Typography>€250 5 Days (3Hrs) Full Rig.</Typography>
-                            <Typography>€10 Hour Board Only.</Typography>
-                            <Typography> €20 Half a Day Board Only.</Typography>
-                            <Typography>€40 Daily Board Only.</Typography>
-                            <Typography> €150 A week Board Only.</Typography>
+                            <Typography className={classes.modalPriceText}>  €25 1 Hour Full Rig.</Typography>
+                            <Typography className={classes.modalPriceText}>€50 Half Day (3Hrs) Full Rig..</Typography>
+                            <Typography className={classes.modalPriceText}>€250 5 Days (3Hrs) Full Rig.</Typography>
+                            <Typography className={classes.modalPriceText}>€10 Hour Board Only.</Typography>
+                            <Typography className={classes.modalPriceText}> €20 Half a Day Board Only.</Typography>
+                            <Typography className={classes.modalPriceText}>€40 Daily Board Only.</Typography>
+                            <Typography className={classes.modalPriceText}> €150 A week Board Only.</Typography>
                         </div>
                     </div>
                 </Paper>

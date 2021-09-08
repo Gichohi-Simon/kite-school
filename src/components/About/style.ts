@@ -16,6 +16,9 @@ export default makeStyles((theme: Theme) => createStyles({
         textAlign: 'center',
         fontSize:'25px',
         fontWeight:700,
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'20px'
+        }
        
     },
     mainSection: {
@@ -31,8 +34,9 @@ export default makeStyles((theme: Theme) => createStyles({
         fontWeight: 700,
         display:'flex',
         alignItems:'center',
+        marginBottom:'20px',
         [theme.breakpoints.down('sm')]: {
-            fontSize:'25px'
+            fontSize:'20px'
           }
 
     },
@@ -61,6 +65,7 @@ export default makeStyles((theme: Theme) => createStyles({
         marginTop:'80px',
         [theme.breakpoints.down('xs')]: {
             marginTop:'40px',
+            fontSize:'14px',
         }
     },
 
@@ -75,6 +80,9 @@ export default makeStyles((theme: Theme) => createStyles({
     container2Text:{
         fontSize:'16px',
         fontWeight:600,
-        marginTop:'20px'
+        marginTop:'20px',
+        [theme.breakpoints.down('xs')]: {
+            fontSize:'14px',
+        }
     }
 }))
