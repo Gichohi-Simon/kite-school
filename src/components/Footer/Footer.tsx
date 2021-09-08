@@ -5,7 +5,7 @@ import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import {AiOutlineMail} from "@react-icons/all-files/ai/AiOutlineMail";
 import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall";
 import {IoLogoFacebook} from "@react-icons/all-files/io/IoLogoFacebook";
-import {ImInstagram} from "@react-icons/all-files/im/ImInstagram";
+import {FiInstagram} from "@react-icons/all-files/fi/FiInstagram";
 
 export default function Footer() {
     const classes = useStyles()
@@ -31,11 +31,11 @@ export default function Footer() {
                         <List>
                             <ListItem className={classes.list}>
                                 <ListItemText>
-                                    <a href="https://www.facebook.com/pg/goodluckkite/ads/"> <IoLogoFacebook color="#4267B2" className={classes.icons} /></a>
+                                    <a href="https://www.facebook.com/pg/goodluckkite/ads/"> <IoLogoFacebook color="#0072b1" className={classes.icons} /></a>
                                 </ListItemText>
                                 <ListItemText>
                                     <a href="https://www.instagram.com/kenya_kitesurfing_school/">
-                                    <ImInstagram  color="#fbad50" className={classes.icons} />
+                                    <FiInstagram  color="#f2003c" className={classes.icons} />
                                     </a>
                                 </ListItemText>
                             </ListItem>
