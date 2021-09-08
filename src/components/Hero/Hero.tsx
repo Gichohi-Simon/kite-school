@@ -35,22 +35,6 @@ export default function Hero() {
                 <div className={classes.blue}> 
                 </div>
             </div>
-            {/* <div className={classes.Wrapper2}>
-                <div className={classes.Wrapper2Img}>
-                <Image
-                    src='/assets/walk.jpg'
-                    alt="surfer_image"
-                    width='550px'
-                    height='400px'
-                />
-                </div>
-                <Typography className={classes.Wrapper2Text}>
-                    Here's a small video to <br />
-                    take you through what <br />
-                    Kitesurfing entails
-                </Typography>
-            </div> */}
-
         </div>
     )
 }

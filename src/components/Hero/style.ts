@@ -23,17 +23,27 @@ export default makeStyles((theme: Theme) => createStyles({
     text1: {
         fontSize: '32px',
         lineHeight: '1.2',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '25px',
+        }
     },
     text2: {
         fontSize: '16px',
         lineHeight: '1.8',
         marginTop: '30px',
-        marginBottom: '30px'
+        marginBottom: '30px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '14px',
+        }
     },
     button: {
         backgroundColor: '#30d5c8',
-        color:'white'
+        color:'white',
+        fontSize: '14px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '12px',
+        }
     },
     container2: {
         marginTop: '-40px',
@@ -73,25 +83,4 @@ export default makeStyles((theme: Theme) => createStyles({
             display: 'block'
         }
     },
-    // Wrapper2Img: {
-    //     webkitBoxShaow: '-22px 38px 0px 11px #DDF8F6',
-    //     boxShadow: '-22px 38px 0px 11px #DDF8F6',
-    //     paddingLeft: '0px',
-    //     paddingRight: '0px',
-    //     [theme.breakpoints.down('sm')]: {
-    //         paddingLeft: '10px',
-    //         paddingRight: '10px',
-    //         webkitBoxShaow: '0px 0px 0px 0px #DDF8F6',
-    //         boxShadow: '0px 0px 0px 0px #DDF8F6;',
-    //     }
-    // },
-    // Wrapper2Text: {
-    //     fontWeight: 600,
-    //     fontSize: '16px',
-    //     paddingLeft: '60px',
-    //     marginTop: '0px',
-    //     [theme.breakpoints.down('sm')]: {
-    //         marginTop: '20px',
-    //     }
-    // }
 }))
