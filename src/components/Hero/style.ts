@@ -63,6 +63,7 @@ export default makeStyles((theme: Theme) => createStyles({
     },
 
     blue: {
+        display: 'unset',
         position: 'absolute',
         left: '850px',
         top: '0px',
@@ -70,8 +71,8 @@ export default makeStyles((theme: Theme) => createStyles({
         backgroundColor: '#DDF8F6',
         width: '540px',
         height: '560px',
-        [theme.breakpoints.down('xs')]: {
-            backgroundColor: 'white',
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
         }
     },
 

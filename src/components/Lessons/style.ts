@@ -56,6 +56,7 @@ export default makeStyles((theme:Theme) =>createStyles({
     },
 
     blue: {
+        display:"unset",
         position: 'absolute',
         left: '300px',
         top: '860px',
@@ -63,11 +64,12 @@ export default makeStyles((theme:Theme) =>createStyles({
         backgroundColor: '#DDF8F6',
         width: '230px',
         height: '250px',
-        [theme.breakpoints.down('xs')]: {
-            backgroundColor: 'white',
+        [theme.breakpoints.down('md')]: {
+            display:'none'
         }
     },
     blue1: {
+        display:"unset",
         position: 'absolute',
         left: '680px',
         top: '860px',
@@ -75,11 +77,12 @@ export default makeStyles((theme:Theme) =>createStyles({
         backgroundColor: '#DDF8F6',
         width: '230px',
         height: '250px',
-        [theme.breakpoints.down('xs')]: {
-            backgroundColor: 'white',
+        [theme.breakpoints.down('md')]: {
+            display:'none'
         }
     },
     blue2:{
+        display:"unset",
         position: 'absolute',
         left: '1060px',
         top: '860px',
@@ -87,8 +90,8 @@ export default makeStyles((theme:Theme) =>createStyles({
         backgroundColor: '#DDF8F6',
         width: '230px',
         height: '250px',
-        [theme.breakpoints.down('xs')]: {
-            backgroundColor: 'white',
+        [theme.breakpoints.down('md')]: {
+            display:'none'
         }
     },
 }))
