@@ -46,7 +46,7 @@ export default function Lessons() {
                     <Grid item key="1" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
-                                src="/assets/wings.jpg"
+                                src="/assets/kite-surfing-trainee-in-action.jpg"
                                 width="230px"
                                 height="180px"
                             />
@@ -68,7 +68,7 @@ export default function Lessons() {
                     <Grid item key="2" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
-                                src="/assets/walk.jpg"
+                                src="/assets/two-men-holding-kite-on-beach.jpg"
                                 width="230px"
                                 height="180px"
                             />
@@ -90,7 +90,7 @@ export default function Lessons() {
                     <Grid item key="3" xs={12} md={6} lg={4}>
                         <div className={classes.card}>
                             <Image
-                                src="/assets/skiil.jpg"
+                                src="/assets/open-beach-with-kites.jpg"
                                 width="230px"
                                 height="180px"
                             />
